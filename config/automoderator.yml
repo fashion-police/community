@@ -1,0 +1,153 @@
+####Flag Help me find
+    title: ["find", "identify"]
+    action: remove
+    modmail: looks like you want r/fashion
+
+---
+
+####Flag requests
+    title: ["Request", "REQUEST", "[request]", "are there"]
+    set_flair: ["Request", "request"]
+
+---
+
+####Flag discussions
+    title: ["/r/Documentaries", "do you think"]
+    set_flair: ["Discussion", "discussion"]
+
+---
+
+#### Auto Spam title keywords
+    title: ["ebook", "torrent", "warez", "Guide", "article"]
+    action: spam
+
+---
+
+# find fasion
+    flair_template_id: 769188ae-b8c3-11ed-9d0d-a2f761511cb6
+    action: remove
+    modmail: We are not a search engine please go to r/fashion
+
+
+---
+
+# find fasion
+    parent_submission:
+      flair_text: Help me find
+      flair_template_id: 769188ae-b8c3-11ed-9d0d-a2f761511cb6
+    action: remove
+    modmail: We are not a search engine please go to r/fashion (debug ft)
+
+---
+
+# Automatically remove anything that gets 5+ reports and send modmail
+    flair_template_id: 769188ae-b8c3-11ed-9d0d-a2f761511cb6
+    action: remove
+    modmail: We are not a search engine please go to r/fashion
+
+---
+
+# Send an alert to modmail if anything gets 2+ reports
+    reports: 2
+    modmail: The above item has received 2+ reports, please investigate.
+
+---
+
+# Automatically remove anything that gets 5+ reports and send modmail
+    reports: 5
+    action: remove
+    modmail: The above item was automatically removed due to receiving 5+ reports. Please verify that this action was correct.
+
+---
+
+# Remove for submissions from accounts newer than 4 days and less than 10 comment karma
+    type: any
+    author:
+      satisfy_any_threshold: false
+      comment_karma: "< 10"
+      account_age: "< 4"
+    action: remove
+
+
+---
+
+# Domain bans (using 'includes' modifier to catch variations)
+    domain (includes): ["smashwords", "articles", "article", "1010103", "alpine-photography", "amazines", "amazon", "articlesbase", "articlerich", "articledashboard", "blogger", "blogspot", "collegetimes", "craigslist", "demandprogress", "devhub", "drupalgardens", "electronics-eetimes", "entrepreneursky", "gibsonsec", "goarticles", "google", "arelmoble", "groovypost", "hubspot", "inilah", "instagram", "issuu", "kurzweilai", "livejournal", "monhardware", "news-hound", "onlycoin", "orchestrate", "prlog", "pubarticle", "quora", "rawstory", "slideshare", "slideworld", "snapchatdb", "sooperarticles", "storify", "sftechbeat", "stumbleupon", "surveymonkey", "talkmarkets", "thauxulynuoc", "thinkprogress", "tumblr", "typepad", "techitssimple", "ustream", "whatthegeek", "wordpress", "zerohedge", "gbuybags", "braceletoutlets", "tradeboards", "sunfrogshirts", "shopify", "ebay", "etsy", "patreon"]  
+    action: spam
+
+---
+
+# Domain bans (exact match)
+    domain: [iprimewire.net, adpr.us, addthis.com, adsmycity.com, alltheragefaces.com, americablog.com, amjnews.com, appiterate.com, avaaz.org, awaissoft.com, awe.sm, b4in.info, bandofmany.com, basicinstructions.net, ben-evans.com, bestdevelopmentcompany.com, bitcoinblogger.com, blacklistednews.com, bl.gd, bluebox.net, blog.com, blog.de, booad.com, bordc.org, borderlessnewsandviews.com, brainsage.com, bridgetondentist.net, bubblews.com, busythumbs.com, buzzfeed.com, californiacarsdealerships.com, callforwarding.com, camphoroilexporters.com, canadianwirelesstradeshow.com, certmagic.com, chan4chan.com, cheezburger.com, chipkos.com, chzbgr.com, clickability.com, code-love.com, coindesk.com, coinmkt.com, coolcoder.in, com.sg, constitutioncampaign.org, copy.com, couponzguru.com, craveonline.com, cryptome.org, cygy.com, dailybail.com, dailycaller.com, dailycurrant.com, dailypaul.com, dailystartup.com, damnlol.com, dashburst.com, datafilehost.com, davesblog.com, davidchartier.com, democraticunderground.com, dentistdupo.com, dentistlakeworth.net, digitalmunition.net, digitalitsolution.com, dkeats.com, dlink.com, docudharma.com, doodlekit.com, ecominoes.com, eliteinfoworld.com, evasi0n.com, examiner.com, ezinearticles.com, fdl.me, feedblitz.com, findingdulcinea.com, fixedbyvonnie.com, flaturl.com, foodbeast.com, freedomsphoenix.com, freeprogrammingbook.com, funnyordie.com, gamerssolutions.com, geekyjump.com, gizcrunch.com, googleusercontent.com, greatbusinessschools.org, greencarreports.com, gsmarena.com, gstatic.com, guardianlv.com, hackersonlineclub.com, harvix.com, heavy.com, heydave.org, hi-techs.com, hs.fi, hubpages.com, hvacsimulator.net, hwbot.org, i4u.com, idiallo.com, inewsu.com, i-newswire.com, initialsgames.com, instant.ly, intelligentproductsolutions.com, itproportal.com, jabfab.com, josic.com, lettherebetees.com, lifenews.com, lifeyo.com, lnkit.com, luckbridal.com, meomni.com, mid-news.com, mightyuninstaller.com, motorauthority.com, mrdrain.com, nationsmith.com, newsvine.com, nhlabornews.com, nicheforseo.com, nickbarron.co, njspin.com, nodepages.com, obameter2012.com, openmedia.org, opera.com, outak.com, outlivetheoutbreak.com, over53loads.info, odsi.co.uk, pastebin.com, peterbarrett.ie, pfhub.com, photographyisnotacrime.com, pinterest.com, policymic.com, politicalwire.com, politilady.com, pollcode.com, popularresistance.org, pulse.me, powerdatarecovery.com, priceonomics.com, prisonplanet.com, realmapa.com, readthetech.com, reason.com, recaption.com, recode.net, redgage.com, rollypol.ly, rtoz.org, satt.co, sbp-romania.com, scribd.com, sdt.bz, shifted2u.com, signon.org, silverlockapp.com, skyforgelabs.com, smirkingchimp.com, socialtimes.com, soundcloud.com, soylentnews.org, spectrum.ieee.org, squeak.org, stableytimes.com, static1.businessinsider.com, static2.businessinsider.com, static3.businessinsider.com, static4.businessinsider.com, storylap.com, sync.com, astylecourse.com, redbubble.com, teespring.com, tankprints.com, taskical.com, techyeducation.com, techchore.com, techgeekforever.com, techglobex.net, technologytell.com, technoblimp.com, techpinas.com, techplus24.com, techrooster.com, techtraverse.com, techvibes.com, techvoid.com, techvoize.com, the-familyinternational.com, theallegiant.com, thebuzzbymikeschaffer.com, thebackbencher.co.uk, www.thecarconnection.com, thefamily-international.com, thefamilyinternational.com, thefamilyinternationalnews.com, thefamilyinternationalwiki.com, thespreadit.com, thetechcult.com, thetruthaboutguns.com, the4cast.com, thingamatech.com, thoughtsandrantings.com, ting.com, tipbit.com, tndpost.com, toi.in, tomcoleforoklahoma.com, top10womens.com, troll.me, tunedtechlife.com, twitchy.com, t4a.es, unioncy.com, uoptutorial.com, upworthy.com, url4u.co, viralstories.net, visual.ly, voiceblaze.com, vpsgator.net, wallstreetonparade.com, washingtonsblog.com, weaselzippers.us, weburbanist.com, wee.my, weebly.com, wepolls.com, wesrch.com, will3942.com, wow40.cℴm, xbmchub.com, yolasite.com, zimbio.com, 786list.com, braceletout.com, findfinejewelry.com, qiqibuy.com, theguardian.com, newser.com]
+    action: spam
+
+---
+
+# Domain bans - social media
+    domain: [4chan.org, facebook.com, digg.com, fbcdn.net, linkedin.com, myspace.com, twitter.com, twitpic.com, twimg.com]
+    action: remove
+    comment: |
+        This post has been removed. /r/Fashion does not allow social media links to be posted. Thank you!
+
+---
+
+# Automatically removed comment phrases
+    type: comment
+    body (includes): ["Hey guise", ".da.bz", "url4u.co", "twt.fi", "katzr.net", "nigger", "nigga", "faggot", "faggotry", "fagget", "kike", "Wojciech", "Braszczok", "illiterate inner city ghetto fuck", "www.redddit.com", "appspread", 'please visit http://', "Wow40.­ℂ­ℴ­m", "[deleted]", "FREE FREE FREE", "mega.co.nz", "thepiratebay.se", "dogetipbot", "porn sex brazzers", "dougphp", "WnuFSaQ", "gemsclashofclans", "Jeff Taylor", "kill yourself"]
+    action: remove
+
+---
+
+# Remove ethnic slurs
+    title+body (regex): (Arabush|Beaner|Beaney|Bluegum|Boche|Bog Irish|Bohunk|Boong|Boonga|Bootlip|Buddhahead|Bule|Bung|Bunga|Burr head|Burrhead|Burr-head|Camel Jockey|Chee-chee|Cheese-eating surrender monkey|Cheesehead|Chi-chi|Chinaman|Ching Chong|Chink|Cholo|Chonky|Christ killer|Coolie|Coon|Coonass|Coon-ass|Cooter|Cracker|Curry muncher|Cushi|Dago|Darkey|Darkie|Darky|Dego|Dink|Dogan|Dogun|Dothead|Dune coon|Eight ball|Eyetie|Fritz|Fuzzy-Wuzzy|Gable|Gaijin|Gin|Gin jockey|Ginzo|Gippo|Gippo|Golliwog|Gook|Gook-eye|Gooky|Goy|Goyim|Goyum|Greaseball|Greaser|Gringo|Groid|Gub|Gubba|Guido|Guizi|Gwailo|Gweilo|Gypo|Gyppo|Gyppoe|Gyppy|Hadji|Hairyback|Haji|Hajji|Half-breed|Haole|Hebe|Heeb|Hillbilly|Hokie|Honkey|Honky|Hun|Hymie|Ikey|Ikeymo|Ikey-mo|Iky|Indon|Injun|Jap|Jigaboo|Jigarooni|Jigg|Jigga|Jigger|Jijjiboo|Joggabo|Kaffer|Kaffir|Kaffre|Kafir|Kike|Kraut|Kuffar|Kushi|Kwai lo|Kyke|Limey|Lubra|Lugan|Macaca|Malaun|Mau-Mau|Mulignan|Mulignon|Neche|Neechee|Neejee|Nichi|Nichiwa|Nidge|Nig|Nigar|Niger|Nigette|Nigga|Niggah|Niggar|Nigger|Niggress|Nigguh|Niggur|Niglet|Nig-nog|Nigor|Nigra|Nigre|Nitchee|Nitchie|Nitchy|Northern Monkey|Nusayri|Paddy|Paki|Pancake Face|Peckerwood|Pickaninny|Piker|Pikey|Piky|Plastic Paddy|Pocha|Pocho|Pohm|Polack|Pom|Pommie|Pommie Grant|Pommu|Porch monkey|Prairie nigger|Quashie|Raghead|Rastus|Razakars|Redlegs|Redneck|Redskin|Roundeye|Sambo|sand monkey|Sand nigger|Sawney|Scandihoovian|Schvartse|Schwartze|Seppo|Septic|Sheeny|Sheep shagger|Shelta|Shiksa|Shkutzim|Sideways vagina|Slant-eye|slopehead|sloper|Slopey|Smoked Irish|smoked Irishman|Sooty|Spearchucker|Spic|Spig|Spigotty|Sply|Spook|Squarehead|Squaw|Squinty|Taff|Taffy|Taffy|Taff|Taig|Tar-Baby|Teague|Teig|Tenker|Teuchter|Thicklips|Timber nigger|Tincker|Tinkar|Tinkard|Tinkere|Touch of the tar brush|Towel head|Tyncar|Tynekere|Tynkard|Tynkere|Tynkere|Uncle Tom|Wetback|Whigger|Whitey|Wigga|Wigger|Wog|Wop|Yank|Yankee|Yid|Zigabo|Zip|Zipperhead)s?
+    action: remove
+
+---
+
+# Remove homophobic slurs
+    title+body (regex): (Airy Dairy Fairy|Anal assassin|Anal Buccaneer|Arse bandit|Ass bandit|Back door bandit|Batty boy|Bean flicker|Bean queen|Bender|bentshot|Bone smuggler|Booty buffer|brown piper|Brownie king|Brownie queen|Bufter|Bufty|Bum bandit|Bum boy|Bum chum|Bum-driller|Bumhole engineer|Bun bandit|Butch|butch-broad|Butt pirate|Butter beaner|Button stitcher|Cackpipe Cosmonaut|Carpet muncher|Celesbian|Chi chi man|Chicken queen|Chunder Plunder|Chutney ferret|Clam Licker|Clam Slammer|Clit raider|Closet queen|Cock gobbler|Cock jockey|Cock knocker|cockknocker|cocknocker|Cockpipe cosmonaut|CousCous queen|Crafty Butcher|Curry queen|Dinge queen|Doily queen|Donut puncher|Doubler tucker|Drag dyke|Drag queen|Drama queen|Dyke|Fag|Faggot|Fanny Basher|Flap queen|Fudge packer|Gaysian|Grey queen|Gym queen|Harry hoofter|Homo|Homo|Jobby jabber|Kitty puncher|Knight of the Pork Sword|Knob jockey|Lesbo|Leso|Lezzer|Lezzie|Lick-a-lotta-puss|Light in the loafers|Light in the pants|Limp wristed|Marmite miner|Mirror polisher|Mound masher|Muff buffer|Muff Diver|Muff muncher|Muscle Mary|nancy boy|Oklahomo|Pansy|Peter Puffer|Pillow biter|Pissy queen|Poo pusher|poofter|Potato queen|Pussy puncher|Raging Bandit|Raging Bandit|Raving Bandit|Raving Bandit|Rear Admiral|Rectal Pioneer|Rice queen|Ring raider|Roarer|rug muncher|Rug muncher|Rump Ranger|Sausage jockey|Scat queen|scissor sister|Scissorchick|She who drinks from the furry cup|Shirt lifter|Shit stabber|Sis lover|Size queen|Snow queen|Taco bumper|The Game of Flats|Tit gobbler|Todger dodger|Tribade|Turd burglar|Twink|Twopence Licker|Uphill gardener|Upstairs gardner|Vin Diesel dyke|Womb Raider|Woolly)s?
+    action: remove
+
+---
+
+# Standard conditions
+    standard: meme generator sites
+    action: spam
+    comment: |
+        This post has been removed. /r/Fashion does not allow image based submissions. Instead, please try submitting to /r/Pics, /r/Gifs or another image-based subreddit. Thank you. 
+
+---
+
+    standard: amazon affiliate links
+    action: spam
+    comment: |
+        This post has been removed. /r/Fashion and Reddit do not allow Amazon affiliate links to be posted. Please edit or resubmit your post without the "/ref=xx_xx_xxx" part of the URL. Thank you.
+
+---
+
+    url+body (regex): [=LINKSHAR', CJPID=', 'bestbuy\.com/\S*[?&](CJPID|AID|PID)=', 'beta\.theshowdowneffect\.com/\S*[?&]ref=', 'codes4free\.com/\S*[?&]mn=', 'ebay\..+?/\S*[?&](afepn|campid|pid=)', 'epicfreeprizes\.com/\S*[?&]ref=', 'fallensword\.com/\S*[?&]ref=', 'free-steam-games\.com/\S*[?&]id=', 'freeleaguecodes\.com/\S*ref=', 'freeleaguecodes\.com/ref', 'freeleaguecodes\.net/ref[?&]id=', 'gamefly\.com/\S*[?&]adtrackingid=', 'gamersgate\.com/\S*[?&]caff=', 'gamestop\.com/\S*[?&](utm_source=linkshare|utm_medium=affiliate|utm_campaign=deeplink|sourceID=|cid=afl_|affID=)', 'getfreesteamgames.net/\S*[?&]id=', 'go\.microsoft\.com/\S*[?&]rrid=', 'gog\.com/\S*[?&]pp=', 'greenmangaming\.com/\S*[?&]gmgr=', 'lnc\.hr/', 'marapets\.com/\S*[?&]id=', 'microsoftstore\.com/\S*[?&]ClickID=', 'mspointscodes.com/\S*[?&]i=', 'newegg\.com/\S*[?&](AID|PID)=', 'origin\.com/\S*[?&](lssiteid=|sourceid=origin_aff_|c=)', 'play-asia\.com/\S*SOap', 'playhawken\.com/\S*[?&]ref=', 'points2shop.com/\S*[?&]ref=', 'razerzone.com/\S*[?&]rid=', 'robertsspaceindustries\.com/star-citizen/\S*[?&]rid=', 'signup\.leagueoflegends\.com/\S*[?&]ref=', 'steam-games-free\.com/\S*[?&]i=', 'steam-refferals\.com/\S*[?&]id=', 'steamcredits\.com/\S*[?&]id=', 'steelseries\.com/backtoschool\S*[?&]code=', 'strt\.cc/\S*[?&]ref=', 'superpoints\.org/\S*[?&]ref=', 'thegreatest\.raidcall\.com/ref/', 'tigerdirect\.com/\S*[?&]AffiliateID=', 'walmart\.com/\S*[?&](wmlspartner|veh=affsourceid=)', 'waroftherosesthegame\.com/\S*[?&]ref=', 'woobox\.com/']
+    action: remove
+
+---
+
+    standard: facebook links
+    action: remove
+    comment: |
+        This post has been removed. /r/Fashion does not allow Facebook links to be submitted. Thank you!
+
+---
+
+    standard: crowdfunding sites
+    action: remove
+    set_flair: "No crowdfunding"
+    comment: |
+        This post has been removed. /r/Fashion does not allow crowdfunding submissions. Instead, please try submitting to /r/Kickstarter or /r/crowdfunding. Thank you!
+
+---
+
+    standard: streaming sites
+    action: remove
+    comment: |
+        i have no idea what you are doing, but it's prob spam. talk with mods if you are sure it's cool.
+
+---
